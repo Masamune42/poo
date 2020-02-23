@@ -1,0 +1,8 @@
+package fr.eni.ecoleeni.oop.model;
+
+public class Harbor {
+	
+	public String name;
+	public Boat boat;
+
+}

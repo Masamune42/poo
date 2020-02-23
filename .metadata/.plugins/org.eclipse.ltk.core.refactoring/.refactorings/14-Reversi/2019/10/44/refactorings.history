@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Pion.java&apos; to &apos;POC/src/poc&apos;&#x0D;&#x0A;- Original project: &apos;14-Reversi&apos;&#x0D;&#x0A;- Destination element: &apos;POC/src/poc&apos;&#x0D;&#x0A;- Original element: &apos;fr.eni.reversi.model.Pion.java&apos;" description="Copy compilation unit" destination="=POC/src&lt;poc" element1="/src&lt;fr.eni.reversi.model{Pion.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1572292752978" units="1" version="1.0"/>
+</session>

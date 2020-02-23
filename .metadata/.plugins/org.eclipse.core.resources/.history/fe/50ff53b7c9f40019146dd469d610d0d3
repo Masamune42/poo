@@ -1,0 +1,16 @@
+package fr.eni.ecoleeni.oop;
+
+import fr.eni.ecoleeni.oop.model.Boat;
+
+public class Launcher {
+	public static void main(String[] args) {
+		Boat myBoat = new Boat();
+		Boat myBoat2 = new Boat("Bob",150);
+		
+		myBoat.name="Richelieu";
+		myBoat.size=100;
+		
+		myBoat.goForward();
+		myBoat.sink();
+	}
+}

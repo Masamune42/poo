@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;mots&apos; in &apos;fr.eni.ecoleeni.maximot.Launcher.tirerMotAleatoirement()&apos; to &apos;dico&apos;&#x0D;&#x0A;- Original project: &apos;01-Maximot&apos;&#x0D;&#x0A;- Original element: &apos;fr.eni.ecoleeni.maximot.Launcher.tirerMotAleatoirement().mots&apos;&#x0D;&#x0A;- Renamed element: &apos;mots&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;mots&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;fr.eni.ecoleeni.maximot{Launcher.java[Launcher~tirerMotAleatoirement@mots!472!520!490!493!QArrayList\&lt;QString;&gt;;!0!false" name="dico" references="true" stamp="1571662841574" version="1.0"/>
+</session>

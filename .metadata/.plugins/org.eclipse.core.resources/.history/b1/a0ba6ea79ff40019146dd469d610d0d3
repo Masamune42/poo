@@ -1,0 +1,15 @@
+package fr.eni.ecoleeni.oop;
+
+public class Launcher {
+	public static void main(String[] args) {
+		Boat myBoat = new Boat();
+		
+		myBoat.name="Richelieu";
+		myBoat.size=100;
+		
+		System.out.println(myBoat.name);
+		
+		myBoat.goForward();
+		myBoat.sink();
+	}
+}

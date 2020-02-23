@@ -1,0 +1,50 @@
+package fr.eni.ecoleeni.calendrier;
+
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
+public class Launcher {
+	public static void main(String[] args) {
+		int annee = 2019, mois = 8;
+
+		afficherMois(annee, mois);
+	}
+
+	private static void afficherMois(int annee, int mois) {
+		GregorianCalendar cal = new GregorianCalendar(annee, mois, 1);
+
+		String monthStr = cal.getDisplayName(GregorianCalendar.MONTH, GregorianCalendar.LONG_FORMAT, Locale.FRANCE);
+		System.out.println(" * " + monthStr + " " + cal.get(GregorianCalendar.YEAR) + " *");
+
+		System.out.println("L  Ma Me J  V  S  D");
+
+		
+		for (int i = 1; i <= cal.get(GregorianCalendar.DAY_OF_WEEK)-1; i++) {
+			if(i== 2) {
+				
+			} else if(i==0) {
+				i=7;
+			}
+			{
+				System.out.print("   ");
+			}
+		}
+
+		int maxDay = cal.getActualMaximum(GregorianCalendar.DATE);
+		
+		for (int i = 0; i < maxDay; i++) {
+			if (i < 9) {
+				System.out.print("0");
+			}
+			if ((cal.get(GregorianCalendar.DAY_OF_WEEK)) - 1 % 7 == 0) {
+				System.out.println(cal.get(GregorianCalendar.DAY_OF_MONTH) + " ");
+			} else {
+				System.out.print(cal.get(GregorianCalendar.DAY_OF_MONTH) + " ");
+			}
+
+			cal.add(GregorianCalendar.DATE, 1);
+		}
+
+	}
+
+}

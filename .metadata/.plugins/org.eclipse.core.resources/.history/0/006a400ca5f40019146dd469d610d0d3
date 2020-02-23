@@ -1,0 +1,15 @@
+import java.util.GregorianCalendar;
+
+public class Launcher {
+	public static void main(String[] args) {
+		GregorianCalendar revolution = new GregorianCalendar(1789,13,14);
+		
+		int year = revolution.get(GregorianCalendar.YEAR);
+		int month = revolution.get(GregorianCalendar.MONTH);
+		int day = revolution.get(GregorianCalendar.DAY_OF_MONTH);
+		
+		System.out.println("Year : " + year);
+		System.out.println("Month : " + month);
+		System.out.println("Day : " + day);
+	}
+}

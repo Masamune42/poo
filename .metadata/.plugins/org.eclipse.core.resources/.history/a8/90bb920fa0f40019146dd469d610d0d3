@@ -1,0 +1,30 @@
+package fr.eni.ecoleeni.oop;
+
+public class Boat {
+	// instance variable
+	// ==attribute
+	// ==property
+	// ==field
+	String name;
+	int size;
+
+	Boat() {
+		System.out.println("Creating new instance !");
+
+	}
+
+	Boat(String name, int size) {
+		this.name = name;
+		this.size = size;
+	}
+
+	// méthodes d'instance
+	void goForward() {
+		System.out.println("Go forward !");
+	}
+
+	void sink() {
+		System.out.println("Glouglou!");
+	}
+
+}

@@ -1,0 +1,5 @@
+package fr.eni.ecoleeni.oop.model;
+
+public class Harbor {
+
+}

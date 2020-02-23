@@ -1,0 +1,21 @@
+package fr.eni.referenceproject.launcher;
+
+public class Launcher {
+
+	public static void main(String[] args) {
+		
+		int myVariable = 10;
+		changeMyInt(myVariable);
+		System.out.println(myVariable);
+
+	}
+	
+	static void changeMyInt(int myInt) {
+		myInt = 0;
+	}
+
+}
+
+class Car{
+	String name;
+}

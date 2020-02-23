@@ -1,0 +1,9 @@
+package fr.eni.ecoleeni.oop;
+
+public class Launcher {
+	public static void main(String[] args) {
+		Boat b1 = new Boat();
+		
+		b1.sink();
+	}
+}

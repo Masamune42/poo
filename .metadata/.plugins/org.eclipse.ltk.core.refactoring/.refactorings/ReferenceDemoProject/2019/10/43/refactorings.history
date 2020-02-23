@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;cat&apos; in &apos;fr.eni.referenceproject.launcher.Launcher.main(...)&apos; to &apos;myCat&apos;&#x0D;&#x0A;- Original project: &apos;ReferenceDemoProject&apos;&#x0D;&#x0A;- Original element: &apos;fr.eni.referenceproject.launcher.Launcher.main(String[]).cat&apos;&#x0D;&#x0A;- Renamed element: &apos;cat&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;cat&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;fr.eni.referenceproject.launcher{Launcher.java[Launcher~main~\[QString;@cat!212!231!216!218!QCat;!0!false" name="myCat" references="true" stamp="1571754030034" version="1.0"/>
+</session>
