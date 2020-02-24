@@ -1,6 +1,7 @@
 package fr.eni.resume;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -48,31 +49,31 @@ public class Launcher {
 		// ArrayList
 		// Bonnes performances pour avoir et affecter les données
 		List<Integer> arrayList = new ArrayList<>();
-		
+
 		// LinkedList
 		// Meilleurs performances pour ajouter et retirer
 		// Pauvre perfs pour avoir et affecter une valeur
 		List<Integer> linkedList = new LinkedList<>();
-		
+
 		arrayList.add(5); // ajout
 		int val = arrayList.get(0); // retour valeur à un index de liste
 		System.out.println("valeur à l'indice 0 : " + val);
 		arrayList.remove(0); // retire l'élement à l'index
 		int tailleArrayList = arrayList.size(); // Taille de la liste
 		System.out.println("Taille arrayList : " + tailleArrayList);
-		
+
 		// Map
 		// clé(unique)/valeur
 		// ~ tableau associatif
 		System.out.println();
 		System.out.println("Maps : ");
-		
+
 		// HashMap
 		// Manipule la hash value des clés pour être efficace
 		// peut avoir une clé null et plusieurs valeurs null
 		Map<String, int[]> hashMap = new HashMap<>();
-		int[] tab = {5,3,2};
-		
+		int[] tab = { 5, 3, 2 };
+
 		// Méthodes
 		hashMap.put("Bob", tab);
 		hashMap.put("James", tab);
@@ -82,31 +83,31 @@ public class Launcher {
 		System.out.println("Bob existe : " + keyExist);
 		boolean valueExist = hashMap.containsValue(tab);
 		System.out.println("tab existe : " + keyExist);
-		
+
 		// Set
 		// éléments uniques
 		System.out.println();
 		System.out.println("Sets : ");
-		
+
 		// HashSet
 		// Manipule la hash value des clés pour être efficace
 		// Un seul élément null
 		Set<Integer> hashSet = new HashSet<>();
-		
+
 		// LinkedHashSet
 		// idem HashSet mais garde l'ordre d'insertion des éléments
 		Set<Integer> linkedHashSet = new LinkedHashSet<>();
-		
+
 		// TreeSet
 		// Tri auto des éléments dans l'ordre ascendant
 		Set<Integer> treeSet = new TreeSet<>();
-		
+
 		hashSet.add(2); // ajout
 		hashSet.add(2); // ajout doublon -> échec
 		hashSet.add(5);
 		int tailleHashSet = hashSet.size();
 		System.out.println("Taille Set : " + tailleHashSet);
-		
+
 		// Itérateurs
 		// Objet générique
 		// Lecture seulement dans l'ordre ascendant
@@ -115,12 +116,12 @@ public class Launcher {
 		for (int i = 0; i < 5; i++) {
 			arrayList.add(i);
 		}
-		
+
 		for (int i = 15; i > 11; i--) {
 			arrayList.add(i);
 		}
-		
-		System.out.println("Taille arrayList avant iterator :"+arrayList.size());
+
+		System.out.println("Taille arrayList avant iterator :" + arrayList.size());
 		Iterator<Integer> it = arrayList.iterator();
 		while (it.hasNext()) {
 			int valArrayList = it.next();
@@ -128,30 +129,32 @@ public class Launcher {
 				it.remove();
 				System.out.print("Suppression de " + valArrayList + " dans l'iterator ");
 			} else {
-				System.out.print(valArrayList+" ");
+				System.out.print(valArrayList + " ");
 			}
-			
+
 		}
-		System.out.println("\nTaille arrayList après iterator :"+arrayList.size());
-		
+		System.out.println("\nTaille arrayList après iterator :" + arrayList.size());
+
 		// Tri de collections
 		// Comparator
 		// TODO : exemple comparator
-		
-		// Arrays et Collections
+
+		// méthodes de Collections
 		Collections.sort(arrayList);
 		System.out.println("arrayList après sort :");
-		for (Integer integer : arrayList) {
-			System.out.print(integer +" ");
-		}
-		System.out.println();
-		Collections.reverse(arrayList);
-		System.out.println("arrayList après reverse :");
-		for (Integer integer : arrayList) {
-			System.out.print(integer+ " ");
-		}
+		System.out.print(arrayList);
 		System.out.println();
 		
+		Collections.reverse(arrayList);
+		System.out.println("arrayList après reverse :");
+		System.out.print(arrayList);
+		System.out.println();
+
+		// méthodes de Arrays
+		Integer[] tabInteger = { 5, 8, 3, 2, 9 };
+		List<Integer> tabToList = Arrays.asList(tabInteger);
+		System.out.println("Conversion d'un tableau de Integer en liste : " + tabToList);
+
 	}
 
 	private static void exceptions() {
