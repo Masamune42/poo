@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+import fr.eni.comparator.SortAgeComparator;
 import fr.eni.exception.NegativeValueException;
 import fr.eni.model.Animal;
 import fr.eni.model.Chat;
@@ -137,7 +138,30 @@ public class Launcher {
 
 		// Tri de collections
 		// Comparator
-		// TODO : exemple comparator
+		Humain humain = new Humain();
+		humain.setPrenom("Alex");
+		humain.setNom("C");
+		humain.setAge(42);
+		
+		Animal chat = new Chat("kiki", 20, humain, 0);
+		Animal chat1 = new Chat("snowki", 8, humain, 15);
+		Animal chat2 = new Chat("molly", 12, humain, 10);
+		Animal chat3 = new Chat("fripouille", 14, humain, 5);
+		
+		List<Animal> animaux = new ArrayList<>();
+		animaux.add(chat);
+		animaux.add(chat1);
+		animaux.add(chat2);
+		animaux.add(chat3);
+		
+		Collections.sort(animaux, new SortAgeComparator());
+		System.out.println("tri de la liste d'animaux par age");
+		Iterator<Animal> itAnimal = animaux.iterator();
+		
+		while (itAnimal.hasNext()) {
+			Animal animal = itAnimal.next();
+			System.out.println(animal.getNom() +" : "+animal.getAge());
+		}
 
 		// méthodes de Collections
 		Collections.sort(arrayList);
